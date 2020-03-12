@@ -16,7 +16,7 @@ let commentSchema = new Schema({
   },
   post_id: {
     type: String
-  }
+  },
 });
 
 module.exports = mongoose.model('Comment', commentSchema);

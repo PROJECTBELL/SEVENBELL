@@ -13,6 +13,13 @@ let postSchema = new Schema({
   created_at: {
     type: Date,
     default: Date.now
+  },
+  Numbers: {
+    type: Number,
+    validate : {
+      validator : Number.isInteger,
+      message : '{VALUE} is not an integer'
+    }
   }
 });
 

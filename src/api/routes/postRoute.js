@@ -7,4 +7,7 @@ module.exports = (server) => {
 
  server.route('/posts/:post_id') // req.params.post_id
  .get(postController.get_a_post);
+
+ 
 }
+
