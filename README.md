@@ -19,6 +19,7 @@ develop
 feature/lenomdelafeature
 
 feature ok merge to develop
+develop ok, admin merge to master
 ```
 
 
