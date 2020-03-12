@@ -17,6 +17,13 @@ let commentSchema = new Schema({
   post_id: {
     type: String
   },
+  Numbers: {
+    type: Number,
+    validate : {
+      validator : Number.isInteger,
+      message : '{VALUE} is not an integer'
+    }
+  }
 });
 
 module.exports = mongoose.model('Comment', commentSchema);
