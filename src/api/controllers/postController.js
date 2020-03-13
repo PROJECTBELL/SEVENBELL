@@ -5,7 +5,7 @@ exports.list_all_post = (req, res) => {
     if(error){
       res.status(500);
       console.log(error);
-      res.json({message: "Erreur serveur."})
+      res.json({message: "Erreur serveur from list all"})
     }
     else{
       res.status(200);
@@ -21,7 +21,7 @@ exports.create_a_post = (req, res) => {
     if(error){
       res.status(500);
       console.log(error);
-      res.json({message: "Erreur serveur."})
+      res.json({message: "Erreur serveur from create"})
     }
     else{
       res.status(201);
@@ -39,7 +39,7 @@ exports.get_a_post = (req, res) => {
     if(error){
       res.status(500);
       console.log(error);
-      res.json({message: "Erreur serveur."})
+      res.json({message: "Erreur serveur from get"})
     }
     else{
       res.status(200);

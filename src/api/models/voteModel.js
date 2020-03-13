@@ -2,15 +2,12 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let voteSchema = new Schema({
-  
-  post_id: {
-    type: String
-  },
-  Number: {
-    type: Boolean,
-    default : 0,
-    require : false,
-  }
+    vote: {
+        type: Boolean
+    },
+    post_id: {
+        type: String
+    }
 });
 
-module.exports = mongoose.model('Votes', voteSchema);
+module.exports = mongoose.model('Vote', voteSchema);
