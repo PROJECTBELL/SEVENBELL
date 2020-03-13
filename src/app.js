@@ -17,7 +17,7 @@ server.use(cors());
 const postRoute = require('./api/routes/postRoute');
 postRoute(server);
 
-const commentRoute = require('./api/routes/commentRoute');
-commentRoute(server);
+const voteRoute = require('./api/routes/voteRoute');
+voteRoute(server);
 
 server.listen(port, hostname);
