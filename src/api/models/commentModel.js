@@ -17,8 +17,8 @@ let commentSchema = new Schema({
   post_id: {
     type: String
   },
-  Numbers: {
-    type: Number,
+  Number: {
+    type: Boolean,
     default : 0,
     validate : {
       validator : Number.isInteger,
