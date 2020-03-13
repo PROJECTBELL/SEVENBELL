@@ -7,4 +7,6 @@ module.exports = (server) => {
 
  server.route('/comments/:comment_id') // req.params.comment_id
  .get(commentController.get_a_comment);
+
+ 
 }

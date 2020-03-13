@@ -20,6 +20,7 @@ let commentSchema = new Schema({
   Number: {
     type: Boolean,
     default : 0,
+    require : false,
     validate : {
       validator : Number.isInteger,
       message : '{VALUE} is not an integer'

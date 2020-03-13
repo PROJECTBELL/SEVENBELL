@@ -45,3 +45,18 @@ exports.get_a_comment = (req, res) => {
     }
   })
 }
+
+exports.get_votes = (req, res) => {
+  // Post.findOne({_id : req.params.comment_id}, (error, posts) => {
+  Comment.findById(req.params.number, (error, vote) => {
+    if(error){
+      res.status(500);
+      console.log(error);
+      res.json({message: "Erreur serveur."})
+    }
+    else{
+      res.status(200);
+      res.json(vote)
+    }
+  })
+}
